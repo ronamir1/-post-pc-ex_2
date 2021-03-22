@@ -53,6 +53,9 @@ public class SimpleCalculatorImpl implements SimpleCalculator {
   public void insertEquals() {
     // todo: calculate the equation. after calling `insertEquals()`, the output should be the result
     //  e.g. given input "14+3", calling `insertEquals()`, and calling `output()`, output should be "17"
+    if (history.length() == 0){
+      return;
+    }
     int cur = 0;
     char lastOp = 'z';
     history = history.concat("+");
